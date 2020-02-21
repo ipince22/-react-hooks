@@ -4,6 +4,8 @@ import React from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 import { CounterClass } from "./CounterClass";
 import { Toggler } from "./Toggler";
+import { SimpleFormHook } from "./SimpleFormHook";
+import { SimpleFormInputHook } from "./SimpleFormInputHook";
 
 //create your first component
 export function Home() {
@@ -14,7 +16,10 @@ export function Home() {
 				<hr />
 				<Toggler />
 				<hr />
-
+				<SimpleFormHook />
+				<hr />
+				<SimpleFormInputHook />
+				<hr />
 				<p>
 					<img src={rigoImage} />
 				</p>
