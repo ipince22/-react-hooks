@@ -6,12 +6,14 @@ import { CounterClass } from "./CounterClass";
 import { Toggler } from "./Toggler";
 import { SimpleFormHook } from "./SimpleFormHook";
 import { SimpleFormInputHook } from "./SimpleFormInputHook";
-
+import { SWMovies } from "./SWMovies";
 //create your first component
 export function Home() {
 	return (
 		<>
 			<div className="text-center mt-5">
+				<SWMovies />
+				<hr />
 				<CounterClass />
 				<hr />
 				<Toggler />
