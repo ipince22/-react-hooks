@@ -4,8 +4,9 @@ export function SWMovies() {
 	const [number, setNumber] = useState("1");
 	const [movie, setMovie] = useState([]);
 
-	function getToDo(url) {
-		fetch(url)
+	function getToDo() {
+		console.log("pa ver si es object", number);
+		fetch("https://swapi.co/api/films/" + number.toString())
 			.then(resp => resp.json())
 			.then(data => {
 				setMovie(data);
@@ -41,9 +42,9 @@ export function SWMovies() {
 					onChange={event => {
 						setNumber(event.target.value);
 
-						let url =
-							"https://swapi.co/api/films/" + event.target.value;
-						getToDo(url);
+						// let url =
+						// 	"https://swapi.co/api/films/" + event.target.value;
+						getToDo();
 					}}>
 					<option value="1">1</option>
 					<option value="2">2</option>
