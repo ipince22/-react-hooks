@@ -1,4 +1,17 @@
-# Hello World with React boilerplate
+# React Hook
+Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
+using useState,useEffect,fetch
+```	
+	useEffect(() => {
+			fetch("https://swapi.co/api/films/" + number.toString())
+			.then(resp => resp.json())
+			.then(data => {
+				setMovie(data);
+				console.log("getToDo", data);
+			});
+	}, []);
+```  
+  
 <p>
   <a href="https://gitpod.io#https://github.com/4GeeksAcademy/react-hello.git"><img src="https://raw.githubusercontent.com/4GeeksAcademy/react-hello/master/open-in-gitpod.svg?sanitize=true" />
   </a>
